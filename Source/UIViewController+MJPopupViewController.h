@@ -26,6 +26,7 @@ typedef enum {
 
 @property (nonatomic, strong) UIViewController *mj_popupViewController;
 @property (nonatomic, strong) MJPopupBackgroundView *mj_popupBackgroundView;
+@property (nonatomic, assign) BOOL keepOnTouchOutside;
 
 - (void)presentPopupViewController:(UIViewController*)popupViewController animationType:(MJPopupViewAnimation)animationType;
 - (void)presentPopupViewController:(UIViewController*)popupViewController animationType:(MJPopupViewAnimation)animationType dismissed:(void(^)(void))dismissed;
